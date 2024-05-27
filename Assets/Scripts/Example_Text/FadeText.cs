@@ -7,44 +7,33 @@ using TMPro;
 public class FadeText : MonoBehaviour
 {
     public float fadeDuration;
-    private TMP_Text text;
+    private TMP_Text _text;
 
     private void Awake()
     {
-        text = GetComponent<TMP_Text>();
+        _text = GetComponent<TMP_Text>();
+        if(_text == null)
+            Debug.LogError("TextMeshPro not found in " + gameObject.name);
     }
     
     
     public void FadeIn()
     {
-        StartCoroutine(TextFadeIn(text, fadeDuration));
+        StartCoroutine(TextFade(_text, 1f, fadeDuration));
     }
     
     public void FadeOut()
     {
-        StartCoroutine(TextFadeOut(text, fadeDuration));
+        StartCoroutine(TextFade(_text, 0f, fadeDuration));
     }
     
-    
-    IEnumerator TextFadeIn(TMP_Text text, float duration) {
-        float originalAlpha = text.color.a;
-        float elapsed = 0f;
+    private static IEnumerator TextFade(TMP_Text text, float targetAlpha, float duration) {
+        var originalAlpha = text.color.a;
+        var elapsed = 0f;
 
         while (elapsed < duration) {
             elapsed += Time.deltaTime;
-            float alpha = Mathf.Lerp(originalAlpha, 1f, elapsed / duration);
-            text.color = new Color(text.color.r, text.color.g, text.color.b, alpha);
-            yield return null;
-        }
-    }
-    
-    IEnumerator TextFadeOut(TMP_Text text, float duration) {
-        float originalAlpha = text.color.a;
-        float elapsed = 0f;
-
-        while (elapsed < duration) {
-            elapsed += Time.deltaTime;
-            float alpha = Mathf.Lerp(originalAlpha, 0f, elapsed / duration);
+            var alpha = Mathf.Lerp(originalAlpha, targetAlpha, elapsed / duration);
             text.color = new Color(text.color.r, text.color.g, text.color.b, alpha);
             yield return null;
         }

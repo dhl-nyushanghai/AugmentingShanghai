@@ -7,47 +7,37 @@ public class FadeMesh : MonoBehaviour
 {
     
     public float fadeDuration;
-    private MeshRenderer meshRenderer;
+    private MeshRenderer _meshRenderer;
     
-    private void Awake()
+    private void Start()
     {
-        meshRenderer = GetComponent<MeshRenderer>();
+        _meshRenderer = GetComponent<MeshRenderer>();
+        if(_meshRenderer == null)
+            Debug.LogError("MeshRenderer not found in " + gameObject.name);
     }
 
     // Fade mesh in
     public void FadeIn()
     {
-        StartCoroutine(MeshFadeIn(meshRenderer, fadeDuration));
+        StartCoroutine(MeshFade(_meshRenderer, 1f, fadeDuration));
     }
     
     // Fade mesh out
     public void FadeOut()
     {
-        StartCoroutine(MeshFadeOut(meshRenderer, fadeDuration));
+        StartCoroutine(MeshFade(_meshRenderer, 0f,fadeDuration));
     }
     
-    IEnumerator MeshFadeIn(MeshRenderer meshRenderer, float duration) {
-        float originalAlpha = meshRenderer.material.color.a;
-        float elapsed = 0f;
+    
+    private static IEnumerator MeshFade(Renderer meshRenderer, float targetAlpha, float duration) {
+        var originalAlpha = meshRenderer.material.color.a;
+        var elapsed = 0f;
 
         while (elapsed < duration) {
             elapsed += Time.deltaTime;
-            float alpha = Mathf.Lerp(originalAlpha, 1f, elapsed / duration);
+            var alpha = Mathf.Lerp(originalAlpha, targetAlpha, elapsed / duration);
             meshRenderer.material.color = new Color(meshRenderer.material.color.r, meshRenderer.material.color.g, meshRenderer.material.color.b, alpha);
             yield return null;
         }
     }
-    
-    IEnumerator MeshFadeOut(MeshRenderer meshRenderer, float duration) {
-        float originalAlpha = meshRenderer.material.color.a;
-        float elapsed = 0f;
-
-        while (elapsed < duration) {
-            elapsed += Time.deltaTime;
-            float alpha = Mathf.Lerp(originalAlpha, 0f, elapsed / duration);
-            meshRenderer.material.color = new Color(meshRenderer.material.color.r, meshRenderer.material.color.g, meshRenderer.material.color.b, alpha);
-            yield return null;
-        }
-    }
-    
 }
