@@ -1,0 +1,76 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ce30dd9adb65b14d8cc298c01d9b48f, type: 3}
+  m_Name: Dragonfly
+  m_EditorClassIdentifier: 
+  description: Dragonfly
+  useBehaviors: 1
+  personalSpace: 0.01
+  overcrowdedAmount: 20
+  undercrowdedAmount: -1
+  attentionRange: 1
+  targetingInaccuracy: 5
+  targetSize: 2
+  repulsedByTarget: 1
+  chanceToWander: 0.2
+  chanceToWander_checkFrequency: 10
+  chanceToWander_wanderDuration: 10
+  chanceToChaseFlockTarget: 0
+  chanceToChaseFlockTarget_checkFrequency: 0
+  chanceToChaseFlockTarget_chaseDuration: 10
+  chanceToBeStationary: 0.1
+  chanceToBeStationary_checkFrequency: 30
+  chanceToBeStationary_stationaryDuration: 10
+  lookForwardFactor: 0.63
+  lookBehind: 0
+  lookBehindFactor: 0.4
+  turnWhenBesideSomething: 0
+  turnIfStuck: 1
+  reverseIfStuck: 0
+  frequencyToCheckIfStuck: 3
+  durationToTryGettingUnstuck: 0.25
+  speed_preferred: 4
+  speed_preferred_variance: 2
+  speed_max: 6
+  speed_max_variance: 1
+  speed_min: 2
+  speed_min_variance: 0
+  speed_acceleration: 10
+  speed_deceleration: 10
+  turnSpeed_movingFastest: 60
+  turnSpeed_movingSlowest: 700
+  allowStationaryTurning: 0
+  flying: 1
+  preferredElevationOverThings: 0.1
+  wanderingElevation_max: 6
+  wanderingElevation_min: 0.5
+  MatchTargetElevation_tolerance_max: 1
+  MatchTargetElevation_tolerance_min: 0
+  liftSpeed_movingFastest: 3
+  liftSpeed_movingSlowest: 1
+  dropSpeed_movingFastest: 1
+  dropSpeed_movingSlowest: 3
+  elevationNoiseScale: 0.317
+  elevationNoiseSpeed: 0.05
+  ascendIfStationary: 0
+  descendIfStationary: 0
+  chanceToAscend: 0.2
+  chanceToAscend_checkFrequency: 15
+  chanceToAscend_descendDuration: 1
+  chanceToDescend: 0.2
+  chanceToDescend_checkFrequency: 15
+  chanceToDescend_ascendDuration: 1
+  pitch_intensityUp: 50
+  pitch_intensityDown: 50
+  pitch_range: 10
+  roll_intensity: 141
+  roll_range: 15

@@ -1,0 +1,74 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ce30dd9adb65b14d8cc298c01d9b48f, type: 3}
+  m_Name: _Test
+  m_EditorClassIdentifier: 
+  useBehaviors: 0
+  attentionRange: 10
+  personalSpace: 1
+  overcrowdedAmount: 5
+  undercrowdedAmount: 1
+  targetingInaccuracy: 0
+  targetSize: 1
+  chanceToWander: 0
+  chanceToWander_checkFrequency: 0
+  chanceToWander_wanderDuration: 5
+  chanceToChaseFlockTarget: 0
+  chanceToChaseFlockTarget_checkFrequency: 0
+  chanceToChaseFlockTarget_chaseDuration: 10
+  chanceToBeStationary: 0.33
+  chanceToBeStationary_checkFrequency: 10
+  chanceToBeStationary_stationaryDuration: 5
+  lookForwardFactor: 1
+  lookBehind: 1
+  lookBehindFactor: 1
+  turnWhenBesideSomething: 1
+  turnIfStuck: 1
+  reverseIfStuck: 1
+  frequencyToCheckIfStuck: 3
+  durationToTryGettingUnstuck: 1
+  speed_preferred: 5
+  speed_preferred_variance: 2
+  speed_max: 8
+  speed_max_variance: 1
+  speed_min: 1
+  speed_min_variance: 0
+  speed_acceleration: 2
+  speed_deceleration: 6
+  turnSpeed_movingFastest: 90
+  turnSpeed_movingSlowest: 180
+  allowStationaryTurning: 1
+  flying: 0
+  preferredElevationOverThings: 0.5
+  wanderingElevation_max: 6
+  wanderingElevation_min: 1
+  MatchTargetElevation_tolerance_max: 1
+  MatchTargetElevation_tolerance_min: 0.3
+  liftSpeed_movingFastest: 2
+  liftSpeed_movingSlowest: 1
+  dropSpeed_movingFastest: 3
+  dropSpeed_movingSlowest: 4
+  elevationNoiseScale: 0
+  elevationNoiseSpeed: 0
+  ascendIfStationary: 0
+  descendIfStationary: 0
+  chanceToAscend: 0
+  chanceToAscend_checkFrequency: 15
+  chanceToAscend_descendDuration: 1
+  chanceToDescend: 0
+  chanceToDescend_checkFrequency: 15
+  chanceToDescend_ascendDuration: 1
+  pitch_intensityUp: 90
+  pitch_intensityDown: 90
+  pitch_range: 60
+  roll_intensity: 432
+  roll_range: 30

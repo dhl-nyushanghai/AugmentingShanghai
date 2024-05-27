@@ -1,0 +1,76 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ce30dd9adb65b14d8cc298c01d9b48f, type: 3}
+  m_Name: Fish (small)
+  m_EditorClassIdentifier: 
+  description: Minnows
+  useBehaviors: 1
+  personalSpace: 0.5
+  overcrowdedAmount: 6
+  undercrowdedAmount: 3
+  attentionRange: 4
+  targetingInaccuracy: 5
+  targetSize: 0.3
+  repulsedByTarget: 0
+  chanceToWander: 1
+  chanceToWander_checkFrequency: 10
+  chanceToWander_wanderDuration: 16
+  chanceToChaseFlockTarget: 0
+  chanceToChaseFlockTarget_checkFrequency: 0
+  chanceToChaseFlockTarget_chaseDuration: 10
+  chanceToBeStationary: 0
+  chanceToBeStationary_checkFrequency: 30
+  chanceToBeStationary_stationaryDuration: 3
+  lookForwardFactor: 1
+  lookBehind: 1
+  lookBehindFactor: 0.8
+  turnWhenBesideSomething: 1
+  turnIfStuck: 1
+  reverseIfStuck: 0
+  frequencyToCheckIfStuck: 3
+  durationToTryGettingUnstuck: 0.25
+  speed_preferred: 0.4
+  speed_preferred_variance: 0.1
+  speed_max: 1
+  speed_max_variance: 0.2
+  speed_min: 0.1
+  speed_min_variance: 0
+  speed_acceleration: 1
+  speed_deceleration: 2
+  turnSpeed_movingFastest: 100
+  turnSpeed_movingSlowest: 200
+  allowStationaryTurning: 1
+  flying: 1
+  preferredElevationOverThings: 0.05
+  wanderingElevation_max: 5
+  wanderingElevation_min: 1
+  MatchTargetElevation_tolerance_max: 1
+  MatchTargetElevation_tolerance_min: 0.3
+  liftSpeed_movingFastest: 1
+  liftSpeed_movingSlowest: 1
+  dropSpeed_movingFastest: 2
+  dropSpeed_movingSlowest: 1.5
+  elevationNoiseScale: 0.03
+  elevationNoiseSpeed: 0.5
+  ascendIfStationary: 0
+  descendIfStationary: 0
+  chanceToAscend: 0
+  chanceToAscend_checkFrequency: 15
+  chanceToAscend_descendDuration: 3
+  chanceToDescend: 0
+  chanceToDescend_checkFrequency: 10
+  chanceToDescend_ascendDuration: 3
+  pitch_intensityUp: 90
+  pitch_intensityDown: 90
+  pitch_range: 30
+  roll_intensity: 0.1
+  roll_range: 5

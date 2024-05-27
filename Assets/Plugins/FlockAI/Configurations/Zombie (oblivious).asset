@@ -1,0 +1,76 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ce30dd9adb65b14d8cc298c01d9b48f, type: 3}
+  m_Name: Zombie (oblivious)
+  m_EditorClassIdentifier: 
+  description: Zombie (oblivious)
+  useBehaviors: 1
+  personalSpace: 0.5
+  overcrowdedAmount: 10000
+  undercrowdedAmount: -1
+  attentionRange: 0.1
+  targetingInaccuracy: 5
+  targetSize: 1
+  repulsedByTarget: 0
+  chanceToWander: 1
+  chanceToWander_checkFrequency: 30
+  chanceToWander_wanderDuration: 29
+  chanceToChaseFlockTarget: 0
+  chanceToChaseFlockTarget_checkFrequency: 0
+  chanceToChaseFlockTarget_chaseDuration: 10
+  chanceToBeStationary: 0.2
+  chanceToBeStationary_checkFrequency: 60
+  chanceToBeStationary_stationaryDuration: 10
+  lookForwardFactor: 0.1
+  lookBehind: 0
+  lookBehindFactor: 0.005
+  turnWhenBesideSomething: 0
+  turnIfStuck: 1
+  reverseIfStuck: 1
+  frequencyToCheckIfStuck: 6
+  durationToTryGettingUnstuck: 0.4
+  speed_preferred: 0.5
+  speed_preferred_variance: 0.5
+  speed_max: 1
+  speed_max_variance: 0.2
+  speed_min: 0.05
+  speed_min_variance: 0
+  speed_acceleration: 1
+  speed_deceleration: 10
+  turnSpeed_movingFastest: 200
+  turnSpeed_movingSlowest: 200
+  allowStationaryTurning: 1
+  flying: 0
+  preferredElevationOverThings: 0.5
+  wanderingElevation_max: 6
+  wanderingElevation_min: 1
+  MatchTargetElevation_tolerance_max: 1
+  MatchTargetElevation_tolerance_min: 0.3
+  liftSpeed_movingFastest: 2
+  liftSpeed_movingSlowest: 1
+  dropSpeed_movingFastest: 3
+  dropSpeed_movingSlowest: 4
+  elevationNoiseScale: 0
+  elevationNoiseSpeed: 0
+  ascendIfStationary: 0
+  descendIfStationary: 0
+  chanceToAscend: 0
+  chanceToAscend_checkFrequency: 15
+  chanceToAscend_descendDuration: 1
+  chanceToDescend: 0
+  chanceToDescend_checkFrequency: 15
+  chanceToDescend_ascendDuration: 1
+  pitch_intensityUp: 90
+  pitch_intensityDown: 90
+  pitch_range: 60
+  roll_intensity: 432
+  roll_range: 30

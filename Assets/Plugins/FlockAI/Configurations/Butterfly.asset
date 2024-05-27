@@ -1,0 +1,76 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ce30dd9adb65b14d8cc298c01d9b48f, type: 3}
+  m_Name: Butterfly
+  m_EditorClassIdentifier: 
+  description: Butterfly
+  useBehaviors: 1
+  personalSpace: 0.1
+  overcrowdedAmount: 4
+  undercrowdedAmount: 1
+  attentionRange: 4
+  targetingInaccuracy: 5
+  targetSize: 1
+  repulsedByTarget: 0
+  chanceToWander: 0.25
+  chanceToWander_checkFrequency: 15
+  chanceToWander_wanderDuration: 10
+  chanceToChaseFlockTarget: 0.25
+  chanceToChaseFlockTarget_checkFrequency: 30
+  chanceToChaseFlockTarget_chaseDuration: 10
+  chanceToBeStationary: 0.5
+  chanceToBeStationary_checkFrequency: 60
+  chanceToBeStationary_stationaryDuration: 10
+  lookForwardFactor: 0.5
+  lookBehind: 1
+  lookBehindFactor: 0.3
+  turnWhenBesideSomething: 1
+  turnIfStuck: 1
+  reverseIfStuck: 0
+  frequencyToCheckIfStuck: 3
+  durationToTryGettingUnstuck: 0.25
+  speed_preferred: 0.75
+  speed_preferred_variance: 0.25
+  speed_max: 1
+  speed_max_variance: 0.25
+  speed_min: 0.25
+  speed_min_variance: 0
+  speed_acceleration: 0.5
+  speed_deceleration: 1.5
+  turnSpeed_movingFastest: 90
+  turnSpeed_movingSlowest: 180
+  allowStationaryTurning: 1
+  flying: 1
+  preferredElevationOverThings: 0.1
+  wanderingElevation_max: 6
+  wanderingElevation_min: 0.5
+  MatchTargetElevation_tolerance_max: 0.5
+  MatchTargetElevation_tolerance_min: 0
+  liftSpeed_movingFastest: 0.5
+  liftSpeed_movingSlowest: 1
+  dropSpeed_movingFastest: 0.5
+  dropSpeed_movingSlowest: 0.3
+  elevationNoiseScale: 0.07
+  elevationNoiseSpeed: 2
+  ascendIfStationary: 0
+  descendIfStationary: 1
+  chanceToAscend: 0.25
+  chanceToAscend_checkFrequency: 5
+  chanceToAscend_descendDuration: 1
+  chanceToDescend: 0.25
+  chanceToDescend_checkFrequency: 5
+  chanceToDescend_ascendDuration: 1
+  pitch_intensityUp: 90
+  pitch_intensityDown: 90
+  pitch_range: 15
+  roll_intensity: 0.25
+  roll_range: 15

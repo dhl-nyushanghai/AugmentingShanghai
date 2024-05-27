@@ -1,0 +1,76 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ce30dd9adb65b14d8cc298c01d9b48f, type: 3}
+  m_Name: Starling
+  m_EditorClassIdentifier: 
+  description: Starling
+  useBehaviors: 1
+  personalSpace: 0.5
+  overcrowdedAmount: 50
+  undercrowdedAmount: 20
+  attentionRange: 10
+  targetingInaccuracy: 0
+  targetSize: 1
+  repulsedByTarget: 0
+  chanceToWander: 0
+  chanceToWander_checkFrequency: 8
+  chanceToWander_wanderDuration: 5
+  chanceToChaseFlockTarget: 1
+  chanceToChaseFlockTarget_checkFrequency: 10
+  chanceToChaseFlockTarget_chaseDuration: 10
+  chanceToBeStationary: 0
+  chanceToBeStationary_checkFrequency: 5
+  chanceToBeStationary_stationaryDuration: 5
+  lookForwardFactor: 0.98
+  lookBehind: 1
+  lookBehindFactor: 0.013
+  turnWhenBesideSomething: 0
+  turnIfStuck: 1
+  reverseIfStuck: 0
+  frequencyToCheckIfStuck: 3
+  durationToTryGettingUnstuck: 0.25
+  speed_preferred: 4
+  speed_preferred_variance: 0.1
+  speed_max: 6
+  speed_max_variance: 0.1
+  speed_min: 1
+  speed_min_variance: 0
+  speed_acceleration: 2
+  speed_deceleration: 6
+  turnSpeed_movingFastest: 60
+  turnSpeed_movingSlowest: 100
+  allowStationaryTurning: 1
+  flying: 1
+  preferredElevationOverThings: 0.1
+  wanderingElevation_max: 1
+  wanderingElevation_min: 0.2
+  MatchTargetElevation_tolerance_max: 1
+  MatchTargetElevation_tolerance_min: 0.5
+  liftSpeed_movingFastest: 2
+  liftSpeed_movingSlowest: 0.5
+  dropSpeed_movingFastest: 1
+  dropSpeed_movingSlowest: 4
+  elevationNoiseScale: 0.05
+  elevationNoiseSpeed: 0.2
+  ascendIfStationary: 0
+  descendIfStationary: 0
+  chanceToAscend: 0.3
+  chanceToAscend_checkFrequency: 10
+  chanceToAscend_descendDuration: 3
+  chanceToDescend: 0
+  chanceToDescend_checkFrequency: 15
+  chanceToDescend_ascendDuration: 1
+  pitch_intensityUp: 90
+  pitch_intensityDown: 90
+  pitch_range: 50
+  roll_intensity: 0.25
+  roll_range: 30
