@@ -54,6 +54,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   contentToType: 
+  TypeSpeed: 0.1
   typeOnStart: 0
   typeSound: {fileID: 0}
 --- !u!114 &321531386531235071
