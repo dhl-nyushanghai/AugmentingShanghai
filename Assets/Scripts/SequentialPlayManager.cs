@@ -8,9 +8,9 @@ using System;
 public class CustomEvent
 {
     [Space(7)]
-    public float interval;
-    [Space(7)]
     public UnityEvent unityEvent;
+    [Space(7)]
+    public float interval;
     
     public CustomEvent(UnityEvent unityEvent, float interval)
     {

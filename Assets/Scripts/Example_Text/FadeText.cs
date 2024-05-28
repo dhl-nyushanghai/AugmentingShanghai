@@ -17,14 +17,16 @@ public class FadeText : MonoBehaviour
     }
     
     
-    public void FadeIn()
+    public void FadeIn(int fadeDurationParam = 0)
     {
-        StartCoroutine(TextFade(_text, 1f, fadeDuration));
+        var fadeDurationToRun = fadeDurationParam == 0 ? fadeDuration : fadeDurationParam;
+        StartCoroutine(TextFade(_text, 1f, fadeDurationToRun));
     }
     
-    public void FadeOut()
+    public void FadeOut(int fadeDurationParam = 0)
     {
-        StartCoroutine(TextFade(_text, 0f, fadeDuration));
+        var fadeDurationToRun = fadeDurationParam == 0 ? fadeDuration : fadeDurationParam;
+        StartCoroutine(TextFade(_text, 0f, fadeDurationToRun));
     }
     
     private static IEnumerator TextFade(TMP_Text text, float targetAlpha, float duration) {

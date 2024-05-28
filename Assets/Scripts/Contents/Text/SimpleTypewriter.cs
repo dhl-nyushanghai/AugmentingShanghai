@@ -11,7 +11,7 @@ public class SimpleTypewriter : MonoBehaviour
     [CanBeNull] private AudioSource _typeAudioSource;
     [TextArea,SerializeField,Header("If you need to use the typewriter effect,\nyou need to set the text here"),Space(10)] 
     private string contentToType;
-    private const float TypeSpeed = 0.1f;
+    [SerializeField,Space(5)] private float TypeSpeed = 0.1f;
 
     [Header("Setting")]
     [SerializeField] private bool typeOnStart = false;
